@@ -7,11 +7,11 @@
 <meta name="theme-color" content="#fbfbfd" media="(prefers-color-scheme: light)">
 <meta name="theme-color" content="#131025" media="(prefers-color-scheme: dark)">
 
-<title>Jobeelyn Baitus Corilla, CEO of Starbee</title>
-<meta name="description" content="Jobeelyn Baitus Corilla is the founder of Starbee. See her certificates and training, and get in touch.">
+<title>Jobeelyn Baitus Corilla — Certificates &amp; Profile</title>
+<meta name="description" content="Jobeelyn Baitus Corilla is a Provincial Youth Development Officer in South Cotabato. See her certificates and training, and get in touch.">
 <meta property="og:type" content="profile">
-<meta property="og:title" content="Jobeelyn Baitus Corilla, CEO of Starbee">
-<meta property="og:description" content="Certificates, training and background of the founder of Starbee.">
+<meta property="og:title" content="Jobeelyn Baitus Corilla">
+<meta property="og:description" content="Certificates, training and background of Jobeelyn Baitus Corilla.">
 
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -510,6 +510,7 @@
   }
   @media (max-width: 640px) {
     .wrap { width: calc(100% - 40px); }
+    .brand { font-size: 17px; }
     .site-nav { display: none; }
     .site-head .wrap { justify-content: space-between; }
     .credentials { padding-block: 72px 80px; }
@@ -540,12 +541,8 @@
 
 <header class="site-head">
   <div class="wrap">
-    <a class="brand" href="#top" aria-label="Starbee, back to top">
-      <img class="brand-logo"
-           src="logo.png"
-           alt=""
-           width="34" height="34">
-      Starbee
+    <a class="brand" href="#top" aria-label="Jobeelyn Baitus Corilla, back to top">
+      Jobeelyn B. Corilla
     </a>
     <nav class="site-nav" aria-label="Sections">
       <a href="#certificates">Certificates</a>
@@ -562,8 +559,8 @@
     <div class="wrap">
       <div>
         <h1 id="name">Jobeelyn Baitus Corilla</h1>
-        <p class="role" id="role">Founder and CEO, Starbee</p>
-        <p class="lede">I run Starbee, a personal initiative focused on youth development, education, and professional growth, alongside my work as a Local Youth Development Officer with the Provincial Government of South Cotabato. I keep my training current, and the certificates below are the record.</p>
+        <p class="role" id="role">Provincial Youth Development Officer III</p>
+        <p class="lede">I serve as a Provincial Youth Development Officer with the Provincial Government of South Cotabato, working on youth development, education, and professional growth. I keep my training current, and the certificates below are the record.</p>
 
         <div class="cta">
           <a class="btn btn-primary" href="#certificates">View certificates</a>
@@ -583,7 +580,7 @@
               </svg>
             </div>
             <img id="portrait"
-                 src="profile_pic.jpg"
+                 src="img_cert/profile_pic.jpg"
                  alt="Portrait of Jobeelyn Baitus Corilla"
                  hidden>
           </div>
@@ -631,8 +628,8 @@
     <div class="wrap">
       <div class="row">
         <div>
-          <h2>StarBee Details</h2>
-          <p class="lead">StarBee is a realty and property services brand in Polomolok, South Cotabato, founded and led by CEO Jobeelyn Baitus Corilla, offering listings, consultations, and support for buyers and sellers in the area.</p>
+          <h2>Contact details</h2>
+          <p class="lead">For speaking engagements, training invitations, youth development collaborations, or questions about any of the certificates listed above, feel free to reach out.</p>
         </div>
         <dl class="contact-list">
           <div><dt>Facebook</dt><dd><a href="https://www.facebook.com/jobeelyn.b.corilla">facebook.com/jobeelyn.b.corilla</a></dd></div>
@@ -640,7 +637,7 @@
       </div>
 
       <footer class="foot">
-        <span>© <span id="year">2026</span> Starbee</span>
+        <span>© <span id="year">2026</span> Jobeelyn Baitus Corilla</span>
         <a href="#top">Back to top</a>
       </footer>
     </div>
@@ -948,7 +945,6 @@
       '@type': 'Person',
       name: $('name').textContent.trim(),
       jobTitle: $('role').textContent.trim(),
-      worksFor: { '@type': 'Organization', name: 'Starbee' },
       hasCredential: CERTIFICATES.map((c) => ({
         '@type': 'EducationalOccupationalCredential',
         name: c.title,
